@@ -1,0 +1,170 @@
+body {
+  background-image: linear-gradient(
+    45deg,
+    rgb(200, 150, 225),
+    rgb(148, 126, 191),
+    rgb(48, 11, 124),
+    rgb(87, 34, 193),
+    rgb(48, 11, 124),
+    rgb(87, 34, 193),
+    rgb(48, 11, 124),
+    rgb(0, 0, 0),
+    rgb(20, 5, 50)
+  );
+}
+main {
+  top: 5%;
+  padding-top: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  display: block;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(20, 5, 50);
+  margin: 4%;
+  font-weight: bold;
+  text-align: right;
+}
+/* edit from here to*/
+
+nav {
+  font-size: 105%;
+  text-align: right;
+  width: 100%;
+  background-color: #ffffff;
+  display: inline;
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: visible;
+}
+
+nav div {
+  display:inline;
+}
+
+button{
+  background-color:inherit;
+  border: none;
+   text-decoration: none;
+  color: rgb(20, 5, 50);
+  margin-left: 4%;
+  margin-right: 4%;
+  font-weight: bold;
+  text-align: right;
+  font-family: inherit;
+  font-size: inherit;
+  
+}
+button:hover{
+  cursor: pointer;
+  background-color: black;
+}
+nav div .items a{
+  text-decoration:  none;
+  align-items: inherit;
+    font-size: inherit%;
+  text-align: inherit;
+  width: 30%;
+  background-color: black;
+  color: #ffffff;
+ 
+  left: 5px;
+  
+  overflow: hidden;
+    
+}
+
+nav div .items{
+  align-items: right;
+    font-size: 105%;
+  text-align: right;
+  width: 30%;
+  background-color: black;
+  color: #ffffff;
+  display: inline;
+  padding-left: 5%;
+  right: 0;
+  border: 2px solid black;
+  box-color: black;
+  overflow: hidden;
+    
+}
+
+
+/* till here */
+
+section h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4em;
+}
+
+section div .Ptitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+section h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+section p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+#welcome-section {
+  height: 100vh;
+}
+
+#projects {
+  background-color: rgba(20, 5, 50, 55%);
+}
+
+.project-tile {
+  display: flex;
+
+  width: 100%;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+
+  background-color: gray;
+
+  border: 1px solid black;
+  width: 33%;
+  margin: 3%;
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  margin: 20px;
+  width: 90%;
+}
+
+.Ptitle,
+h1 span,
+h2,
+p span {
+  color: #ffffff;
+}
+
+@media (max-width: 500px) {
+  img {
+    margin: 2%;
+    width: 90%;
+  }
+}
