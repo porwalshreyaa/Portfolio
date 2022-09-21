@@ -10,7 +10,7 @@ body {
     rgb(48, 11, 124),
     rgb(0, 0, 0),
     rgb(20, 5, 50)
-  );
+  )
 }
 main {
   top: 5%;
@@ -19,6 +19,10 @@ main {
   margin-bottom: 10%;
   display: block;
   overflow: hidden;
+}
+
+i{
+   width: 3%;
 }
 
 a {
