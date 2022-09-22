@@ -1,36 +1,48 @@
 body {
+  margin:0;
+  padding:0;
+ 
   background-image: linear-gradient(
     45deg,
-    rgb(200, 150, 225),
-    rgb(148, 126, 191),
+    
+    rgb(87, 34, 193),black,
     rgb(48, 11, 124),
-    rgb(87, 34, 193),
-    rgb(48, 11, 124),
-    rgb(87, 34, 193),
-    rgb(48, 11, 124),
-    rgb(0, 0, 0),
-    rgb(20, 5, 50)
-  )
+    rgb(0, 0, 0)
+    
+  );
+}
+
+.contactlinks a img {
+   width: 5%;
 }
 main {
   top: 5%;
   padding-top: 5%;
   margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 0;
   display: block;
   overflow: hidden;
 }
 
-section a img {
-   width: 10%;
-}
-
-a {
+ nav a, nav button {
   text-decoration: none;
-  color: rgb(20, 5, 50);
-  margin: 4%;
+  color: pink;
+  margin: 2%;
   font-weight: bold;
   text-align: right;
+   font-size: 120%;
+}
+
+nav a:hover {
+  border: 1px solid #ffffff;
+  background-color: pink;
+  color: black;
+  
+}
+nav button:hover{
+  border: 1px solid #ffffff;
+  background-color: pink;
+  color: black;
 }
 /* edit from here to*/
 
@@ -38,7 +50,8 @@ nav {
   font-size: 105%;
   text-align: right;
   width: 100%;
-  background-color: #ffffff;
+  background-color: black;
+  
   display: inline;
   padding-left: 5%;
   padding-top: 2%;
@@ -126,6 +139,9 @@ section p {
   text-align: center;
   font-weight: bold;
   font-size: 2em;
+  word-spacing: 20px;
+  letter-spacing: 1px;
+  line-height: 55px
 }
 #welcome-section {
   height: 100vh;
@@ -133,7 +149,25 @@ section p {
 
 #projects {
   background-color: rgba(20, 5, 50, 55%);
+  padding-bottom: 2%;
 }
+
+#projects a {
+  text-decoration: none;
+  color: #ffffff;
+    font-size: 120%;
+  font-family: fantasy;
+}
+
+#projects a:hover {
+  background: #ffffff;
+  border-radius: 5px;
+  color: black;
+    font-size: 120%;
+  padding-left: 1%;
+  padding-right: 1%
+}
+
 
 .project-tile {
   display: flex;
@@ -145,18 +179,19 @@ section p {
   display: flex;
   flex-direction: column;
 
-  background-color: gray;
+  background-color: #131E3A;
 
   border: 1px solid black;
   width: 33%;
-  margin: 3%;
+  margin: 2%;
   align-items: center;
   text-align: center;
+  padding-bottom: 2%;
 }
 
-img {
+div.project-box img {
   margin: 20px;
-  width: 90%;
+  width: 95%;
 }
 
 .Ptitle,
@@ -166,9 +201,121 @@ p span {
   color: #ffffff;
 }
 
+a img {
+  position: relative;
+  bottom: 15%;
+  width:3%;
+  overflow: hidden;
+  z-index:10;
+ overflow: hidden;
+  z-index:10;
+  
+  
+}
+
+.cp{
+  left:20%
+}
+.fcc{
+  left: 40%;
+}
+.gh{
+  left: 60%;
+  }
+
+.li{
+  left: 80%;
+ }
+
+ .cp:hover{
+  cursor: pointer;
+  border:solid;
+  border: 1px solid #ffffff;
+   background: #ffffff;
+   border-radius: 5px;
+}
+ .fcc:hover{
+  cursor: pointer;
+  border:solid;
+   border: 1px solid #ffffff;
+   background: #ffffff;
+   border-radius: 5px;
+  
+ 
+}
+ .gh:hover{
+  cursor: pointer;
+  border:solid;
+   border: 1px solid #ffffff;
+   background: #ffffff;
+   border-radius: 5px;
+  
+ 
+}
+.li:hover{
+  cursor: pointer;
+  border:solid;
+   border: 1px solid #ffffff;
+   background: #ffffff;
+   border-radius: 5px;
+  
+  
+}
+
+p a:hover {
+  cursor: pointer;
+  border: solid;
+  background-color: orange;
+  padding-left: 1%;
+  padding-right: 1%;
+    color: black;
+}
+
 @media (max-width: 500px) {
   img {
     margin: 2%;
     width: 90%;
   }
+}
+
+section.contact {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0;
+  padding-bottom: 1%;
+ 
+}
+.contactbox {
+  background: pink;
+  margin-top:10%;
+  padding: 2%;
+   height: 60%;
+  width: 100%;
+}
+footer{
+  margin-bottom: 0;
+  padding-top: 2%;
+  padding-bottom: 2%; 
+  text-align: center;
+  font-size: 120%;
+  font-family: Monospace;
+  height: 5%;
+  bottom: 0%;
+  color: #000080;
+  background-color: #f1f1f1;
+  bottom: 0;
+   width: 100%;
+}
+.introduction h1 {
+  border: solid;
+}
+.introduction p.myintro {
+ 
+  color: pink
+}
+
+
+a.message_me {
+  text-decoration: none;
+  color: lightgray;
 }
