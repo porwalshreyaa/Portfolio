@@ -67,23 +67,7 @@ nav div {
   display:inline;
 }
 
-button{
-  background-color:inherit;
-  border: none;
-   text-decoration: none;
-  color: rgb(20, 5, 50);
-  margin-left: 4%;
-  margin-right: 4%;
-  font-weight: bold;
-  text-align: right;
-  font-family: inherit;
-  font-size: inherit;
-  
-}
-button:hover{
-  cursor: pointer;
-  background-color: black;
-}
+
 nav div .items a{
   text-decoration:  none;
   align-items: inherit;
@@ -212,6 +196,9 @@ a img {
   
   
 }
+.tr{
+  left: 2%;
+}
 
 .cp{
   left:20%
@@ -227,6 +214,13 @@ a img {
   left: 80%;
  }
 
+.tr:hover{
+  cursor: pointer;
+  border:solid;
+  border: 1px solid #ffffff;
+   background: #ffffff;
+   border-radius: 5px;
+}
  .cp:hover{
   cursor: pointer;
   border:solid;
@@ -276,7 +270,7 @@ p a:hover {
     margin: 2%;
     width: 90%;
   }
-}
+  }
 
 section.contact {
   height: 100%;
