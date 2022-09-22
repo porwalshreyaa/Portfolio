@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>product-landing-page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formdeco.css">
+    
+  </head>
+<body>
+  
+<h1 id="title">How can I help you?</h1>
+<p id="description">You can leave your details and your message here</p>
+
+<form id="survey-form">
+
+  <fieldset>
+    <label id="name-label">    Hmm...I'm curious, what's your name?
+    </label>
+    <input type="text" placeholder="    Enter your Name" id="name" required>
+
+    <label id="email-label">I'll contact you via Email, so...
+    </label>
+    <input type="email" placeholder="    Enter your email" id="email" required>
+
+    <label id="number-label">You aren't 90, are you?
+    </label>
+    <input type="number" placeholder="    Age" id="number" required min="10" max="90">
+
+    <label>Are you a student like me?
+    </label>
+    <select id="dropdown">
+
+      <option value="0">Select your Role
+      </option>
+
+      <option value="1">Student(Not earning)
+      </option>
+
+      <option value="2">Intern/Freelancer
+      </option>
+
+      <option value="3">Full Time Job
+      </option>
+
+      <option value="4">Full Time Business
+      </option>
+      
+       <option value="5">Prefer not to say
+      </option>
+      
+       <option value="6">Others
+      </option>
+
+    </select>
+
+    <label>Are you offerning me a job and a 100 crore package?
+    </label>
+    <label><input class="inline" type="radio" value="yes" name="yes-or-no">YES, How do you know already?</label>
+    <label><input class="inline" type="radio" value="no" name="yes-or-no">Sadly, Nope</label>
+
+
+      <label>You can write to me any query, message, suggestion, greeting, review, information..anything...
+      </label>
+      <textarea placeholder="    Hello...."> </textarea>
+
+      <div>
+        <input id="submit" type="submit" value="Submit">
+      </div>
+
+  </fieldset>
+</form>
+  
+  </body>
+</html>
