@@ -1,0 +1,94 @@
+/* Navbar.css */
+
+body {
+  z-index: 1;
+  margin-bottom: 2%;
+}
+/* Navbar container */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem; /* Adjust horizontal padding */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 1rem 0; /* Adjust vertical padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar logo */
+.header-logo {
+   width: 40px; /* Set the desired width */
+   height: 40px; /* Set the desired height */
+   border-radius: 40%; /* Make the image circular */
+   border: 2px solid #ffffff;
+}
+
+/* Navbar links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 5;
+  margin-bottom: 5;
+  padding: 0;
+}
+
+.nav-links li {
+  font-size: 1rem;
+}
+
+/* Navbar link styles */
+.nav-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: yellow;
+}
+
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 820px) {
+  nav {
+    flex-direction: row;
+    align-items: flex;
+  }
+
+  /* Navbar links */
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  margin-left: 0;
+ 
+  margin-top: 1;
+  margin-bottom: 1;
+  padding: 0;
+}
+
+/* Navbar logo */
+.header-logo {
+  width: 30px; /* Set the desired width */
+  height: 30px; /* Set the desired height */
+  border-radius: 40%; /* Make the image circular */
+  border: 1px solid #ffffff;
+}
+
+.nav-links li {
+  font-size: 0.8rem;
+}
+
+}

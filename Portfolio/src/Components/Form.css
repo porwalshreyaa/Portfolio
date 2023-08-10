@@ -1,0 +1,38 @@
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 2em;
+    background: solid;
+    background-color: rgba(15, 15, 15, 80%);
+    border-radius: 10px;
+    font-size: 105%;
+     font-family: cursive, Monospace;
+    border: solid;
+  }
+
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    border: 1px solid pink;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    padding: 1%;
+  }
+  
+  input,
+  textarea  {
+    background-color: #FADBD8 ;
+    border: 1px solid #0a0a23;
+    color: gray;
+  }
+  
