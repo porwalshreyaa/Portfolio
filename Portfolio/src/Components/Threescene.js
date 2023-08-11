@@ -1,19 +1,18 @@
 import React, { useRef } from 'react';
-import { Canvas, useLoader, useFrame } from '@react-three/fiber';
+
+import { Canvas } from '@react-three/fiber';
 import { PerspectiveCamera, OrbitControls } from '@react-three/drei';
-import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
-import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+
 import { Avatar } from './Avatar';
 
 
 
 const Threescene = () => {
 
-  const groupRef = useRef();
+   const groupRef = useRef();
 
   // // Load the .glb model with skin
-  // const glbData = useLoader(GLTFLoader, 'public/64cd094483cb753a24f129e2.glb');
+  // const glbData = useLoader(GLTFLoader, './64cd094483cb753a24f129e2.glb');
   // const skinModel = glbData.scene.clone();
 
   // // Load the .fbx model with animations
@@ -53,7 +52,7 @@ const Threescene = () => {
         
         <PerspectiveCamera makeDefault position={[0, 2, 5]} />
         <OrbitControls />
-        <ambientLight intensity={0.5} />
+        <ambientLight intensity={1} />
         <pointLight position={[10, 10, 10]} />
 
       </Canvas>

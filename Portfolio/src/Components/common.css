@@ -1,0 +1,266 @@
+body {
+  overflow: scroll ;
+  position:relative;
+    /* overflow-x: hidden; */
+    -webkit-user-select:none;
+    user-select:none;
+    /*  */
+   background-color: black; 
+    color: azure;
+    margin-top: 12vh;
+    justify-content: space-between;
+
+    padding: 1rem;
+    /* Adjust horizontal padding */
+    width: 100%;
+}
+.dance {
+  background-image: "Jn.png";
+}
+
+.socialsbox {
+  align-items: center;
+  text-align: center;
+   /* display:flex; 
+   flex-direction: row; */
+  width: 100%;
+  padding: 2%;
+  border: 1px solid transparent;
+}
+.socials {
+  color:lavender;
+  width: 20%;
+  text-decoration: none;
+  margin: 5%;
+}
+
+section {
+  
+    align-items: center;
+    text-align: center;
+   display: flex;
+    flex-direction: column; 
+    padding: 10px;
+    margin-bottom: 0;
+    height: inherit;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    margin: auto;
+    padding: 5px;
+    /* overflow: auto; */
+    font-family: 'Courier New', Courier, monospace;
+    align-content: baseline;
+    text-align: center;
+}
+
+img:not(.about-img, .header-logo) {
+    width: 100%;
+}
+
+ .about-img {
+    width: 20%;
+    
+} 
+
+/* Typing Text  Animation */
+
+.type-text {
+    position: relative;
+}
+
+.type-text::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -5px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    -webkit-animation: type .5s infinite;
+    animation: type .5s infinite;
+}
+
+@-webkit-keyframes type {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes type {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* Typing Text ends */
+
+
+/* Project box CSS*/
+
+.Project-tile {
+    padding: 5%;
+}
+.row {
+    
+    margin: 10px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 10px;
+    
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .Pl .column {
+    float:left;
+    width: 20%;
+   
+  }
+  
+  .Pr .column {
+    float:right;
+    width: 20%;
+   
+  }
+  /* .detail {
+    width: 80%;
+  } */
+
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    
+    color: black;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 1%;
+    padding: 1%;
+  }
+  
+ 
+
+
+/*
+.project-box {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    width: 20%;
+
+}
+
+div.project-box img {
+    width: 100%;
+} */
+
+.blink {
+    animation: blink 1s steps(1, end) infinite;
+}
+
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+/* Project box css ends  */
+
+/* Skills - Image Marquee */
+
+
+/* .marquee {
+   
+    } */
+    
+    .marquee-content {
+       
+      display:inline-flex;
+      animation: scrolling 10s linear infinite;
+    }
+    
+    .marquee-item {
+      flex: 0 0 16vw;
+      margin: 0 1vw;
+      height: inherit;
+      overflow: hidden;
+    /*   flex: 0 0 20vw; */
+    /*   margin: 0 2vw; */
+    }
+
+    .marquee-item  img {
+        height: 50%;
+    }
+    
+    .marquee-item img {
+      display: block;
+      width: 100%;
+    /*   padding: 0 20px; */
+    }
+    
+    @keyframes scrolling {
+      0% { transform: translateX(0); }
+      100% { transform: translatex(-144vw); }
+    }
+    
+      
+
+
+/* Image marquee ends */
+
+/* .footertext {
+    color: inherit;
+    text-align: center;
+    align-items: center;
+} */
+
+
+/* Contact.css */
+
+/* .right{
+
+  }
+
+  .left {
+
+  } */

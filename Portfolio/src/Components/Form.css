@@ -1,11 +1,14 @@
+/* *{
+  align-items: center;
+} */
 form {
+  align-items: center;
     width: 60vw;
     max-width: 500px;
-    min-width: 300px;
-    margin: 0 auto;
+    min-width: 200px;
     padding: 2em;
     background: solid;
-    background-color: rgba(15, 15, 15, 80%);
+    background-color: rgba(10, 1, 26, 0.699);
     border-radius: 10px;
     font-size: 105%;
      font-family: cursive, Monospace;
@@ -15,24 +18,25 @@ form {
   label {
     display: block;
     margin: 0.5rem 0;
+
   }
   
   input,
   textarea,
   select {
-    margin: 10px 0 0 0;
     width: 100%;
+    max-width:initial;
     min-height: 2em;
     border: 1px solid pink;
-    border-radius: 15px;
+    border-radius: 5px;
     margin-bottom: 5%;
-    padding: 1%;
+    padding: 2%;
   }
   
   input,
   textarea  {
-    background-color: #FADBD8 ;
-    border: 1px solid #0a0a23;
+    background-color:black ;
+    border: 1px solid cornsilk;
     color: gray;
   }
   
