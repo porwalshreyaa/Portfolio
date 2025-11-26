@@ -90,3 +90,29 @@ window.addEventListener('scroll', () => {
         navbar.style.boxShadow = 'none';
     }
 });
+
+// Email template functionality
+document.getElementById('email-link').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    const email = 'kavya_shri@icloud.com';
+    const subject = 'Collaboration Opportunity';
+    const body = `Hi Kavyashri,
+
+I came across your portfolio and I'm impressed by your work in AI/ML. I'd like to discuss a potential collaboration opportunity.
+
+Here are my details:
+
+My Contact Information:
+Name: 
+Company/Organization: 
+Email: 
+Phone: 
+
+Best time to connect: 
+
+Thank you,`;
+    
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+});
