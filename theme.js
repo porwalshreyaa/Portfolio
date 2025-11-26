@@ -91,28 +91,50 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Email template functionality
-document.getElementById('email-link').addEventListener('click', function(e) {
-    e.preventDefault();
+// Email template functionality with modal
+document.addEventListener('DOMContentLoaded', function() {
+    const emailLink = document.getElementById('email-link');
+    const modal = document.getElementById('email-modal');
+    const closeModal = document.getElementById('close-modal');
+    const copyBtn = document.getElementById('copy-template');
+    const openEmailBtn = document.getElementById('open-email');
+    const template = document.getElementById('email-template');
+    const copyStatus = document.getElementById('copy-status');
     
-    const email = 'kavya_shri@icloud.com';
-    const subject = 'Collaboration Opportunity';
-    const body = `Hi Kavyashri,
-
-I came across your portfolio and I'm impressed by your work in AI/ML. I'd like to discuss a potential collaboration opportunity.
-
-Here are my details:
-
-My Contact Information:
-Name: 
-Company/Organization: 
-Email: 
-Phone: 
-
-Best time to connect: 
-
-Thank you,`;
-    
-    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoLink;
+    if (emailLink && modal) {
+        // Open modal
+        emailLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            modal.style.display = 'flex';
+        });
+        
+        // Close modal
+        closeModal.addEventListener('click', function() {
+            modal.style.display = 'none';
+            copyStatus.style.display = 'none';
+        });
+        
+        // Close on background click
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                copyStatus.style.display = 'none';
+            }
+        });
+        
+        // Copy template
+        copyBtn.addEventListener('click', function() {
+            template.select();
+            document.execCommand('copy');
+            copyStatus.style.display = 'block';
+            setTimeout(() => {
+                copyStatus.style.display = 'none';
+            }, 2000);
+        });
+        
+        // Open email with subject
+        openEmailBtn.addEventListener('click', function() {
+            window.location.href = 'mailto:kavya_shri@icloud.com?subject=Collaboration%20Opportunity';
+        });
+    }
 });
