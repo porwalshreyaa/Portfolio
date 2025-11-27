@@ -1,315 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kavyashri K R - AI/ML Engineer</title>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shreya Porwal</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="theme.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <a href="#home" class="logo">KKR</a>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-                    <span class="sun-icon">☀</span>
-                    <span class="moon-icon">☾</span>
-                </button>
-            </div>
+      <div class="container">
+        <div class="nav-content">
+          <a href="#home" class="logo">SP</a>
+          <ul class="nav-links">
+            <li><a href="#about">about</a></li>
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#articles">articles</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle theme"
+          >
+            <span class="sun-icon">☀</span>
+            <span class="moon-icon">☾</span>
+          </button>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Kavyashri K R</h1>
-                <p class="hero-subtitle">Aspiring AI/ML Engineer | Data Science Enthusiast</p>
-                <p class="hero-description">
-                    Building intelligent solutions with machine learning, deep learning frameworks,
-                    and exploring cutting-edge LLM-based applications. Passionate about Generative AI,
-                    RAG pipelines, and deploying real-time ML systems.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
+      <div class="container hero-wrapper">
+        <!-- Profile Image -->
+        <div class="hero-image">
+          <img src="public/my-image.jpeg" alt="Shreya Porwal" />
         </div>
+        <div class="hero-content">
+          <h1 class="hero-title">Shreya Porwal</h1>
+          <p class="hero-subtitle">Backend Engineer</p>
+          <!-- <p class="hero-description">
+                    Working on backend. Pursuing Bachelor of Science - Data Science from IIT Madras
+                </p> -->
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I am an aspiring AI/ML Engineer with a strong foundation in machine learning,
-                        data preprocessing, neural networks, and Python-based model development. My expertise
-                        spans building ML models, developing recommendation systems, and working with deep
-                        learning frameworks.
-                    </p>
-                    <p>
-                        With hands-on experience in SQL, Python, and data analysis from my Business Analyst roles,
-                        I bring a unique blend of analytical thinking and technical implementation. I am particularly
-                        passionate about Generative AI, RAG pipelines, and deploying real-time ML systems that solve
-                        real-world problems.
-                    </p>
-                    <p>
-                        Currently expanding my knowledge in LLM applications, vector databases, and advanced deep
-                        learning techniques while continuously working on projects that push the boundaries of what's
-                        possible with AI.
-                    </p>
-                </div>
+      <div class="container">
+        <h2 class="section-title">about me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I am a B.S. Data Science student at IIT Madras with a passion for
+              backend development, APIs, and data engineering.
+            </p>
+            <p>
+              Based in Madhya Pradesh, I am open to remote opportunities where I
+              can contribute to impactful projects and continue growing as a
+              developer.
+            </p>
+
+            <!-- Small Skills Snippet -->
+            <div class="about-skills">
+              <span class="skill">Python</span>
+              <span class="skill">Java</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">Node.js</span>
+              <span class="skill">Flask</span>
+              <span class="skill">MongoDB</span>
             </div>
+            <p class="about-resume">
+              <a
+                href="https://drive.google.com/file/d/1S4uslR6I1PeVQXs5LeQifxQvTfrGQVMv/view?usp=sharing"
+                target="_blank"
+                class="resume-link"
+                >checkout my resume</a
+              >
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="experience-timeline">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div>
-                            <h3>Business Analyst</h3>
-                            <p class="company">Adhyatm Resources Private Limited</p>
-                        </div>
-                        <span class="duration">Aug 2024 to Feb 2025</span>
-                    </div>
-                    <ul class="experience-list">
-                        <li>Analyzed large datasets to identify business patterns and insights used for decision-making
-                        </li>
-                        <li>Built predictive and classification ML models for customer segmentation and behavior
-                            analysis</li>
-                        <li>Automated data workflows in Python, improving reporting accuracy and efficiency</li>
-                        <li>Developed data visualizations and analytical reports for strategy teams</li>
-                        <li>Collaborated with cross-functional teams to integrate ML insights into business processes
-                        </li>
-                    </ul>
-                </div>
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <div>
-                            <h3>Web Developer Intern</h3>
-                            <p class="company">Adhyatm Resources Private Limited</p>
-                        </div>
-                        <span class="duration">Mar 2024 to Jun 2024</span>
-                    </div>
-                    <ul class="experience-list">
-                        <li>Developed internal dashboards and tracking tools using HTML, CSS, and JavaScript</li>
-                        <li>Integrated API-based modules for internal automation</li>
-                        <li>Used web analytics and data to support ML-driven recommendation ideas for future features
-                        </li>
-                    </ul>
-                </div>
+      <div class="container">
+        <h2 class="section-title">work experience</h2>
+        <div class="experience-timeline">
+          <!-- experience 1 -->
+          <div class="experience-item">
+            <div class="experience-header">
+              <div>
+                <h3>Intern</h3>
+                <p class="company">Techkareer (remote)</p>
+              </div>
+              <span class="duration">Sep 2025 - Oct 2025</span>
             </div>
+            <ul class="experience-list">
+              <li>collected and created json files</li>
+              <li>Wrote blogs</li>
+            </ul>
+          </div>
+
+          <!-- experience 2 -->
+          <div class="experience-item">
+            <div class="experience-header">
+              <div>
+                <h3>Data research intern</h3>
+                <p class="company">Freelance (remote)</p>
+              </div>
+              <span class="duration">Jan 2025 - May 2025</span>
+            </div>
+            <ul class="experience-list">
+              <li>
+                collected, scrapped data from various sources and created excel
+                sheets/csv files
+              </li>
+            </ul>
+          </div>
+          <!-- experience 3 -->
+          <div class="experience-item">
+            <div class="experience-header">
+              <div>
+                <h3>Data intern</h3>
+                <p class="company">
+                  Indian Institute of Management, Bangalore (remote)
+                </p>
+              </div>
+              <span class="duration">June 2024 - Dec 2024</span>
+            </div>
+            <div class="experience-tags">
+              <span class="experience-tag">Python</span>
+              <span class="experience-tag">Pandas</span>
+              <span class="experience-tag">Excel</span>
+              <span class="experience-tag">Data Cleaning</span>
+              <span class="experience-tag">Matplotlib</span>
+            </div>
+            <ul class="experience-list">
+              <li>
+                collected, scrapped data from various sources and created excel
+                sheets/csv files
+              </li>
+              <li>cleaned and transformed data for analysis</li>
+              <li>
+                used data from multiple repos, plotted graphs, collected data
+                manually and contributed to data repos
+              </li>
+            </ul>
+          </div>
+          <!--  -->
         </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Movie Recommendation System</h3>
-                    </div>
-                    <p class="project-description">
-                        Built a content-based recommendation engine using TF-IDF vectorization and cosine
-                        similarity. Improved recommendations through feature engineering on genres, keywords,
-                        and cast embeddings.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Scikit-learn</span>
-                        <span class="tag">TF-IDF</span>
-                        <span class="tag">Cosine Similarity</span>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Customer Churn Prediction</h3>
-                    </div>
-                    <p class="project-description">
-                        Developed a classification model using Random Forest and Logistic Regression achieving
-                        89% accuracy. Identified key churn drivers using feature importance analysis.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Machine Learning</span>
-                        <span class="tag">Random Forest</span>
-                        <span class="tag">Classification</span>
-                        <span class="tag">Python</span>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>LLM-based Q&A Chatbot</h3>
-                    </div>
-                    <p class="project-description">
-                        Created a mini chatbot using embedding models and FAISS vector database. Implemented
-                        retrieval-augmented generation (RAG) pipeline to answer domain-specific queries.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">LLM</span>
-                        <span class="tag">RAG</span>
-                        <span class="tag">FAISS</span>
-                        <span class="tag">NLP</span>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Image Classification Model</h3>
-                    </div>
-                    <p class="project-description">
-                        Built a Convolutional Neural Network for classifying images from a custom dataset.
-                        Achieved high accuracy through data augmentation, dropout, and hyperparameter tuning.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">TensorFlow</span>
-                        <span class="tag">Keras</span>
-                        <span class="tag">CNN</span>
-                        <span class="tag">Computer Vision</span>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Retail Demand Forecasting</h3>
-                    </div>
-                    <p class="project-description">
-                        Forecasted product demand using ARIMA and Prophet models. Improved accuracy by 18%
-                        using trend analysis, smoothing, and decomposition techniques.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Time Series</span>
-                        <span class="tag">ARIMA</span>
-                        <span class="tag">Prophet</span>
-                        <span class="tag">Forecasting</span>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Market Basket Analysis</h3>
-                    </div>
-                    <p class="project-description">
-                        Implemented Apriori algorithm to discover association rules and frequently bought-together
-                        items, forming the basis for cross-sell ML pipelines.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Apriori</span>
-                        <span class="tag">Association Rules</span>
-                        <span class="tag">Data Mining</span>
-                        <span class="tag">Python</span>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Interview AI</h3>
             </div>
+            <div class="project-description">
+              <ul>
+                <li>
+                  A simple AI App that takes your resume and job role as input
+                </li>
+                <li>
+                  Extracts the resume data and generates a candidate profile,
+                  analyses your skills
+                </li>
+                <li>
+                  Based on your role and your CV - it generates technical and
+                  behavioural interview questions
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">Node</span>
+              <span class="tag">Express</span>
+              <span class="tag">Groq Sdk</span>
+            </div>
+            <div class="project-links">
+              <!-- <a
+                href="https://your-demo-link.com"
+                target="_blank"
+                class="project-link"
+                >demo</a
+              > -->
+              <a
+                href="https://github.com/porwalshreyaa/InterviewAi"
+                target="_blank"
+                class="project-link"
+                >github</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Spotify Songs Data - ETL</h3>
+            </div>
+            <div class="project-description">
+              <ul>
+                <li>
+                    A simple Data Engineering learning project to experience how to automate Data Flow from various sources
+                    to databases
+                </li>
+                <li>
+                    Extracted music data using the Spotify API and performed transformations
+                </li>
+                <li>
+                    Cleaned and Transformed the data and loaded into an SQLite database
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">Node</span>
+              <span class="tag">Express</span>
+              <span class="tag">Groq Sdk</span>
+            </div>
+            <div class="project-links">
+              <!-- <a
+                href="https://your-demo-link.com"
+                target="_blank"
+                class="project-link"
+                >demo</a
+              > -->
+              <a
+                href="https://github.com/porwalshreyaa/spotify-songs-data-etl"
+                target="_blank"
+                class="project-link"
+                >github</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Teal Turtle MQ</h3>
+            </div>
+            <div class="project-description">
+              <ul>
+                <li>
+                    Currently working on this project
+                </li>
+                <li>
+                    Trying to make my own version of message queues using Flask server
+                </li>
+                <li>
+                    Implementing the Pull mechanism to get event/message
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">Flask</span>
+              <span class="tag">JSON</span>
+            </div>
+            <div class="project-links">
+              <!-- <a
+                href="https://your-demo-link.com"
+                target="_blank"
+                class="project-link"
+                >demo</a
+              > -->
+              <a
+                href="https://github.com/porwalshreyaa/tealTurtleMQ"
+                target="_blank"
+                class="project-link"
+                >github</a
+              >
+            </div>
+          </div>
+
+          <!--  -->
+          
         </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Machine Learning & AI</h3>
-                    <ul class="skill-list">
-                        <li>Supervised & Unsupervised Learning</li>
-                        <li>Deep Learning (Neural Networks, CNNs)</li>
-                        <li>Recommender Systems</li>
-                        <li>NLP (Embeddings, Tokenization)</li>
-                        <li>LLMs, RAG, Vector Databases (FAISS)</li>
-                        <li>Model Evaluation & Optimization</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Technical Skills</h3>
-                    <ul class="skill-list">
-                        <li>Python (NumPy, Pandas, Scikit-learn)</li>
-                        <li>TensorFlow & PyTorch</li>
-                        <li>FastAPI & Flask</li>
-                        <li>SQL (Joins, Subqueries, Window Functions)</li>
-                        <li>Git, Jupyter, VS Code, Postman</li>
-                        <li>Cloud APIs & Deployment Basics</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Data & Analytics</h3>
-                    <ul class="skill-list">
-                        <li>ETL & Feature Engineering</li>
-                        <li>EDA & Feature Selection</li>
-                        <li>Data Visualization (Matplotlib, Seaborn)</li>
-                        <li>Dashboards (Power BI, Tableau)</li>
-                        <li>Statistical Analysis</li>
-                        <li>Time Series Analysis</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Certifications</h3>
-                    <ul class="skill-list">
-                        <li>Machine Learning & Deep Learning Training</li>
-                        <li>Python for Data Science</li>
-                        <li>Git & API Fundamentals</li>
-                        <li>Power BI / Tableau Visualization</li>
-                        <li>IIT Mandi - Data Science & ML Certificate</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- articles Section -->
+    <section id="articles" class="articles">
+      <div class="container">
+        <h2 class="section-title">articles & project documentations</h2>
+        <div class="articles-grid">
+          <div class="article-category">
+            <h3>Tech Blogs</h3>
+            <ul class="article-list">
+              <li>
+                Serving Web Pages the Right Way: SSR vs CSR
+                <a
+                  href="https://sucabbage.hashnode.dev/serving-web-pages-the-right-way-ssr-vs-csr"
+                  class="article-link"
+                  >read</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="article-category">
+            <h3>Rewriting Docs</h3>
+            <ul class="article-list">
+              <li>
+                String Methods: JavaScript
+                <a href="#" class="article-link">read</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="article-category">
+            <h3>During this Project</h3>
+            <ul class="article-list">
+              <li>
+                Youtube Manager Project
+                <a href="#" class="article-link">read</a>
+              </li>
+              <li>
+                TealTurtle MQ
+                <a href="#" class="article-link">read</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p class="contact-text">
-                    I'm always open to discussing new opportunities, innovative projects, or
-                    collaborations in AI/ML. Feel free to reach out!
-                </p>
-                <div class="contact-links">
-                    <a href="mailto:kavya_shri@icloud.com" class="contact-link">Request to work together</a>
-                    <a href="https://linkedin.com/in/kavyashri-k-r-60675926a" target="_blank"
-                        class="contact-link">LinkedIn</a>
-                    <a href="https://github.com/kavyashri217" target="_blank" class="contact-link">GitHub</a>
-                </div>
-                <p class="location">Bengaluru, Karnataka, India</p>
-            </div>
+      <div class="container">
+        <h2 class="section-title">how to find me?</h2>
+        <div class="contact-content">
+          <p class="contact-text">
+            Feel free to shoot a cold text on any of these platforms!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:porwalshreya11111@gmail.com" class="contact-link">
+              email
+            </a>
+            <a
+              href="https://www.linkedin.com/in/porwalshreya/"
+              target="_blank"
+              class="contact-link"
+            >
+             linkedin
+            </a>
+            <a
+              href="https://github.com/porwalshreyaa"
+              target="_blank"
+              class="contact-link"
+            >
+              github
+            </a>
+          </div>
+
+          <p class="location">Neemuch, Madhya Pradesh, India</p>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Kavyashri K R. All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2025 Shreya Porwal. All rights reserved.</p>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
