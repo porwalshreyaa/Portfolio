@@ -346,6 +346,83 @@ section {
   color: var(--accent-hover);
   text-decoration: underline; /* underline only on hover */
 }
+/* ---------- */
+.achievement-title {
+  margin-bottom: 0.5rem;
+}
+
+.achievement-text strong {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+}
+
+.about-achievement {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: var(--transition);
+}
+
+.about-achievement:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px var(--shadow);
+}
+
+.about-achievement h4 {
+  color: var(--accent);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-transform: lowercase;
+}
+
+.achievement-img-link {
+  display: inline-block;
+}
+
+.achievement-img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+
+.achievement-img:hover {
+  transform: scale(1.02);
+}
+
+.achievement-text {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.achievement-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  background: var(--accent-transparent);
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.achievement-link:hover {
+  background: var(--accent-hover);
+  color: var(--background);
+}
+
+
+/* --------------- */
+
+
 
 /* Experience Section */
 .experience-timeline {
