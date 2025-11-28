@@ -34,28 +34,38 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Add active state to navigation on scroll
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-links a');
+let ticking = false;
+
 window.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-links a');
-    
-    let current = '';
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        
-        if (window.pageYOffset >= sectionTop - 100) {
-            current = section.getAttribute('id');
-        }
-    });
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').slice(1) === current) {
-            link.classList.add('active');
-        }
-    });
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            const scrollMiddle = window.scrollY + window.innerHeight / 2;
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionBottom = sectionTop + section.offsetHeight;
+
+                if (scrollMiddle >= sectionTop && scrollMiddle < sectionBottom) {
+                    current = section.id;
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+
+            ticking = false;
+        });
+        ticking = true;
+    }
 });
+
 
 // Intersection Observer for fade-in animations
 const observerOptions = {
