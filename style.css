@@ -739,6 +739,14 @@ section {
   width: 100%; /* underline animation on hover */
 }
 
+#linkedin-fill{
+  fill: var(--bg-primary)
+}
+
+#mail-fill{
+  fill: var(--bg-primary)
+}
+
 .location {
   color: var(--text-secondary);
   font-size: 1rem;
