@@ -249,7 +249,35 @@
               <ul>
                 <li>
                   Uboard is a local-first infinite blackboard for sketching ideas, exploring thoughts, and organizing visually
-without accounts, sync, or cloud dependencies.
+without accounts, sync, or cloud dependencies.<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="themeChange">Dark</button>
+    <script>
+      const setTheme = (theme) => {
+        localStorage.setItem("theme", theme);
+        console.log("Theme set to: ", theme);
+      };
+
+      const getTheme = () => {
+        return localStorage.getItem("theme") || "light";
+      };
+
+      const themeBtn = document.getElementById("themeChange");
+      themeBtn.addEventListener("click", setTheme("dark"));
+      console.log(getTheme());
+    </script>
+  </body>
+</html>
+
                 </li>
                 <li>
                   Pan and zoom smoothly across an unbounded space using world-space coordinates.
@@ -450,7 +478,7 @@ without accounts, sync, or cloud dependencies.
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" stroke="#ff7a26" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 22v-3q0-2 1-3A7 6.5 0 0 1 5 5Q4 3 5 1q3 0 4 2q3.5-1 7 0q1-2 4-2q1 2 0 4a7 6.5 0 0 1-5 11q1 1 1 3v3m-7-3c-4 1-4-2-7-3"/></svg>
             </a>
             <a
-            href="https://discord.gg/wVAFaaew"
+            href="https://discord.gg/P6kTMrQhrZ"
             target="_blank"
             class="contact-link"
           >
