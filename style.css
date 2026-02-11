@@ -26,7 +26,22 @@ html.theme-changing * {
   --transition:
     background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease,
     box-shadow 0.25s ease, fill 0.25s ease, stroke 0.25s ease;
+
+  --heat-0: #f4f5f7; /* empty / zero */
+  --heat-1: #ffd9c2;
+  --heat-2: #ffb88a;
+  --heat-3: #ff944d;
+  --heat-4: #ff7a26; /* accent */
+
+/* 
+  --heat-0: #ebedf0;
+  --heat-1: #ffd4b8;
+  --heat-2: #ffb07a;
+  --heat-3: #ff8a3d;
+  --heat-4: #ff7a26;
+*/
 }
+
 [data-theme="dark"] {
   /* Backgrounds (match hero!) */
   --bg-primary: #140a18; /* deep plum / black cherry */
@@ -44,39 +59,22 @@ html.theme-changing * {
   --border: #3a2641; /* cooler purple border, more natural in dark */
   --card-bg: #1d0f24;
   --shadow: rgba(0, 0, 0, 0.55);
-}
 
-/* :root {
-  --heat-0: #ebedf0;
-  --heat-1: #ffd4b8;
-  --heat-2: #ffb07a;
-  --heat-3: #ff8a3d;
-  --heat-4: #ff7a26;
-} */
-:root {
-  --heat-0: #f4f5f7; /* empty / zero */
-  --heat-1: #ffd9c2;
-  --heat-2: #ffb88a;
-  --heat-3: #ff944d;
-  --heat-4: #ff7a26; /* accent */
-}
-
-/* [data-theme="dark"] {
-  --heat-0: #2a1832;
+  /* --heat-0: #2a1832;
   --heat-1: #4a2540;
   --heat-2: #7a3450;
   --heat-3: #b84a3a;
-  --heat-4: #ff7a26;
-} */
-/* [data-theme="dark"] {
+  --heat-4: #ff7a26; */
+
+/* 
   --heat-0: #22142a;  
   --heat-1: #3a1d2f;
   --heat-2: #5a2735;
   --heat-3: #8a3a32;
   --heat-4: #ff7a26;  
-} */
+ */
 
-[data-theme="dark"] {
+
   /* clearly separated from card (#1d0f24) */
   --heat-0: #2c1935; /* empty grid (visible but subtle) */
   --heat-1: #5a2436;

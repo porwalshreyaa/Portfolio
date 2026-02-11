@@ -1,19 +1,31 @@
 // Theme Toggle Functionality
-const themeToggle = document.getElementById('theme-toggle');
+
+const themeToggle = document.getElementById("theme-toggle");
 const html = document.documentElement;
 
-// Check for saved theme preference or default to 'light'
-const currentTheme = localStorage.getItem('theme') || 'light';
-html.setAttribute('data-theme', currentTheme);
+/* Load saved theme (default DARK if you want) */
+const savedTheme = localStorage.getItem("theme") || "dark";
+html.setAttribute("data-theme", savedTheme);
 
-// Theme toggle event listener
-themeToggle.addEventListener('click', () => {
-    const currentTheme = html.getAttribute('data-theme');
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-    
-    html.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
+themeToggle.addEventListener("click", () => {
+  const current = html.getAttribute("data-theme");
+  const next = current === "light" ? "dark" : "light";
+
+  /* disable transitions */
+  html.classList.add("theme-changing");
+
+  /* switch theme */
+  html.setAttribute("data-theme", next);
+  localStorage.setItem("theme", next);
+
+  /* re-enable transitions after repaint */
+  requestAnimationFrame(() => {
+    setTimeout(() => {
+      html.classList.remove("theme-changing");
+    }, 50);
+  });
 });
+
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
